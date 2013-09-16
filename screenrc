@@ -1,0 +1,16 @@
+vbell off
+escape ^Tt # Ctrl + T
+autodetach on
+altscreen on
+
+defflow auto
+defscrollback 5000
+
+screen -t bash 1
+
+#change the hardstatus settings to give an window list at the bottom of the
+#screen, with the time and date and with the current window highlighted
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W}%c %{g}]'
+#  RED: hardstatus string '%{= rG}[ %{G}%H %{g}][%= %{= rw}%?%-Lw%?%{rr}(%{W}%n*%f%t%?(%u)%?%{rr})%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W}%c %{g}]'
+# BLUE: hardstatus string '%{= bG}[ %{G}%H %{g}][%= %{= bw}%?%-Lw%?%{br}(%{W}%n*%f%t%?(%u)%?%{br})%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W}%c %{g}]'

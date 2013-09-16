@@ -1,0 +1,45 @@
+[color]
+branch = auto
+diff = auto
+status = auto
+
+[color "branch"]
+current = yellow reverse
+local = yellow
+remote = green
+
+[color "diff"]
+meta = yellow bold
+frag = magenta bold
+old = red bold
+new = green bold
+
+[color "status"]
+added = yellow
+changed = green
+untracked = cyan
+
+[core]
+  excludesfile = ~/.gitignore
+
+[alias]
+  d   = diff
+  s   = status --short --branch
+  co  = checkout
+  ll  = log --graph --pretty=format:\"%C(yellow)commit %h %Cred%cr %Cgreen%an%n      %Creset %s%n\"
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+
+[push]
+  default = matching
+
+[mergetool "diff"]
+  cmd = diffmerge
+  trustExitCode = true
+
+[user]
+  name = "Hwan-Joon Choi"
+  email = hc5duke@gmail.com
+[heroku]
+  account = hc5duke
+[github]
+  user = hc5duke
