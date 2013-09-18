@@ -30,7 +30,7 @@ untracked = cyan
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
 
 [push]
-  default = matching
+  default = tracking
 
 [mergetool "diff"]
   cmd = diffmerge
