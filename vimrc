@@ -1,6 +1,7 @@
-syntax on
-set background=light
-:colorscheme default
+syntax enable
+set background=dark
+colorscheme default
+
 
 if has("autocmd")
   filetype indent on
