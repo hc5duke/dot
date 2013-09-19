@@ -5,7 +5,7 @@ alias lll='ls -lAhS'
 # misc commands
 alias top='top -s1 -o cpu -R -F'
 alias psg='ps aux | grep -v "grep" | grep -i'
-
+alias vinginx='sudo mvim /usr/local/etc/nginx/nginx.conf'
 ## git
 alias gits="git status --short --branch"
 alias gitd="git diff"
