@@ -1,6 +1,6 @@
 # set default editor
 export EDITOR=/usr/bin/vim
-export NODE_PATH=/usr/local/lib/node/
+export NODE_PATH=/usr/local/bin/node/
 
 # customize history
 # HISTCONTROL can be one of 'ignoredups' 'ignorespace' 'ignoreboth' 'erasedups'
@@ -21,8 +21,11 @@ fi
 
 # Android tools
 export ANDROID_HOME=/Users/hchoi/dev/android-sdk-macosx
-export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/tools:$HOME/dev/google-cloud-sdk/platform/google_appengine
+export GOPATH=$HOME/dev/go
 
+# eh?
+export PATH=/usr/local/bin:${PATH}
 function prompt_command {
   local fillsize
   local cut
@@ -94,4 +97,12 @@ termwide
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-fortune | cowsay
+echo "************************************************************"
+fortune # | cowsay
+echo "************************************************************"
+
+# The next line updates PATH for the Google Cloud SDK.
+source /Users/hc5duke/dev/google-cloud-sdk/path.bash.inc
+
+# The next line enables bash completion for gcloud.
+source /Users/hc5duke/dev/google-cloud-sdk/completion.bash.inc

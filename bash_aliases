@@ -14,17 +14,20 @@ alias gitl="gitll -n10"
 alias gg="git grep --color"
 
 ## cd
+alias cdd="cd ~/dev/"
 alias cdr="cd ~/dev/ruby"
 alias cdj="cd ~/dev/js"
 alias cdi="cd ~/dev/ios"
-alias cdd="cd ~/dev/distill"
-alias cddd="cd ~/dev/distill/distill"
+alias yy="cd ~/dev/yahoo"
+alias cdy="yy"
+alias cdm="cd ~/dev/yahoo/mep"
+alias cdl="cd ~/dev/yahoo/leftfield"
 
 # dev
 alias vi="mvim"
 alias be='bundle exec'
 alias br='bundle exec rspec'
-alias r='rails'
+alias r='bundle exec rails'
 alias scone="bundle exec rails console"
 alias rrg="rake routes | grep"
 

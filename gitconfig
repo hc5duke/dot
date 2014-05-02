@@ -21,11 +21,13 @@ untracked = cyan
 
 [core]
   excludesfile = ~/.gitignore
+	autocrlf = false
 
 [alias]
   d   = diff
   s   = status --short --branch
   co  = checkout
+  cp  = cherry-pick
   ll  = log --graph --pretty=format:\"%C(yellow)commit %h %Cred%cr %Cgreen%an%n      %Creset %s%n\"
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
 
